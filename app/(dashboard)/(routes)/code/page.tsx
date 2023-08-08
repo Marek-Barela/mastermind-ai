@@ -1,7 +1,7 @@
 "use client";
 import * as z from "zod";
 import Heading from "@/components/features/Heading";
-import { MessageSquare } from "lucide-react";
+import { CodeIcon } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { formSchema } from "./constants";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -59,7 +59,7 @@ const CodePage = () => {
       <Heading
         title="Code generation"
         description="Generate code from descriptive text"
-        Icon={MessageSquare}
+        Icon={CodeIcon}
         iconColor="text-green-700"
         bgColor="bg-green-700/10"
       />
