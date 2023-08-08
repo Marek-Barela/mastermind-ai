@@ -1,9 +1,19 @@
+"use client";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Sidebar from "@/components/features/Sidebar";
+import { useLayoutEffect, useState } from "react";
 
 const MobileSidebar = () => {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useLayoutEffect(() => {
+    setIsMounted(true);
+  }, []);
+
+  if (!isMounted) return null;
+
   return (
     <Sheet>
       <SheetTrigger>
