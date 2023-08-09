@@ -11,3 +11,6 @@ NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
 
 Key from open ai API
 OPENAI_API_KEY=
+
+Replikate api token
+REPLICATE_API_TOKEN=
