@@ -14,3 +14,6 @@ OPENAI_API_KEY=
 
 Replikate api token
 REPLICATE_API_TOKEN=
+
+prisma
+DATABASE_URL=
