@@ -84,7 +84,7 @@ const CodePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="Create useWindow hook that returns window size..."
+                        placeholder="Type code you want to generate..."
                         {...field}
                       />
                     </FormControl>

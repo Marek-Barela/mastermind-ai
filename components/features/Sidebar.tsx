@@ -74,9 +74,6 @@ const Sidebar = ({ apiLimitCount = 0, isPro = false }: SidebarProps) => {
     <div className="space-y-4 py-4 flex flex-col h-full bg-zinc-900 text-white">
       <div className="px-3 py-2 flex-1">
         <Link href="/dashboard" className="flex items-center pl-3 mb-14">
-          <div className="relative w-12 h-12 mr-4">
-            <Image fill alt="Logo" src="/next.svg" />
-          </div>
           <h1 className={cn("text-xl font-bold", montserrat.className)}>Mastermind</h1>
         </Link>
         <div className="space-y-1">

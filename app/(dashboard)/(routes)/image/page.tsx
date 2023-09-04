@@ -82,7 +82,7 @@ const ImagePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading}
-                        placeholder="A picture of a cat in the hat"
+                        placeholder="Type the image name you want to generate..."
                         {...field}
                       />
                     </FormControl>
