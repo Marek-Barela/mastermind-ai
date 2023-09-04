@@ -1,35 +1,43 @@
-Project is using Clerk as login system
+# Project Configuration
 
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+This section outlines the configuration settings required for various components of the project.
 
-CLERK_SECRET_KEY=
+## Clerk Login System Configuration
 
-Routes for Clerk
+### Clerk Public and Secret Keys
 
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
+- **NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY**: The public key for Clerk authentication.
+- **CLERK_SECRET_KEY**: The secret key for Clerk authentication.
 
-Key from open ai API
+### Clerk Routes
 
-OPENAI_API_KEY=
+- **NEXT_PUBLIC_CLERK_SIGN_IN_URL**: URL for Clerk's sign-in page (Default: `/sign-in`).
+- **NEXT_PUBLIC_CLERK_SIGN_UP_URL**: URL for Clerk's sign-up page (Default: `/sign-up`).
+- **NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL**: URL to redirect users to after successful sign-in (Default: `/dashboard`).
+- **NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL**: URL to redirect users to after successful sign-up (Default: `/dashboard`).
 
-Replikate api token
+## OpenAI API Key
 
-REPLICATE_API_TOKEN=
+- **OPENAI_API_KEY**: Your API key for accessing OpenAI services.
 
-prisma ( for example: Planetscale )
+## Replicate API Token
 
-DATABASE_URL=
+- **REPLICATE_API_TOKEN**: Token required for interacting with the Replicate API.
 
-stripe api key
+## Prisma Configuration
 
-STRIPE_API_KEY=
+- **DATABASE_URL**: Database URL configuration, which may vary depending on your database provider (e.g., Planetscale).
 
-You can get webhook on https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local
-STRIPE_WEBHOOK_SECRET=
+## Stripe Configuration
 
-public url ( localhost or production url )
+### Stripe API Key
 
-NEXT_PUBLIC_APP_URL=http://localhost:3000
+- **STRIPE_API_KEY**: Your API key for Stripe integration.
+
+### Stripe Webhook Secret
+
+- **STRIPE_WEBHOOK_SECRET**: Webhook secret key for Stripe. You can create a webhook [here](https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local).
+
+## Public URL Configuration
+
+- **NEXT_PUBLIC_APP_URL**: The public URL for your application, which can be either a localhost URL during development or your production URL.
